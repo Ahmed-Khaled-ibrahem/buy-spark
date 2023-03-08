@@ -201,4 +201,32 @@ class OpenFlutterEcommerceApp extends StatelessWidget {
       );
     }
   }
+  Route _registerRoutesWithany(RouteSettings settings) {
+    if (settings.name == OpenFlutterEcommerceRoutes.shop) {
+      return MaterialPageRoute(
+        builder: (context) {
+          return CategoriesScreen();
+        },
+      );
+    } else if (settings.name == OpenFlutterEcommerceRoutes.productList) {
+      return MaterialPageRoute(builder: (context) {
+        return ProductsScreen();
+      });
+    } else if (settings.name == OpenFlutterEcommerceRoutes.product) {
+      return MaterialPageRoute(builder: (context) {
+        return ProductDetailsScreen();
+      });
+    } else if (settings.name == OpenFlutterEcommerceRoutes.filters) {
+      return MaterialPageRoute(builder: (context) {
+        return FiltersScreen();
+      });
+    } else {
+      return MaterialPageRoute(
+        builder: (context) {
+          return HomeScreen();
+        },
+      );
+    }
+  }
+
 }
