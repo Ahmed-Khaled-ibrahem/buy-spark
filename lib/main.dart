@@ -18,7 +18,6 @@ import 'package:openflutterecommerce/presentation/features/products/products.dar
 import 'package:openflutterecommerce/presentation/features/sign_in/signin_screen.dart';
 import 'package:openflutterecommerce/presentation/features/sign_up/signup_screen.dart';
 import 'package:openflutterecommerce/presentation/features/splash_screen.dart';
-
 import 'config/routes.dart';
 import 'data/repositories/abstract/cart_repository.dart';
 import 'data/repositories/abstract/category_repository.dart';
