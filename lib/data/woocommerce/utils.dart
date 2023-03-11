@@ -15,6 +15,7 @@ class HttpClient {
       'authorization': 'Bearer ' + Storage().token,
     };
     return header;
+    // for additional http clients
   }
 
   Uri createUri(String route, [Map<String, String> param = const {}]) {
