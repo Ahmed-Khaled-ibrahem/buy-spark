@@ -28,45 +28,47 @@ class OpenFlutterViewOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _theme = Theme.of(context);
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
-      child: Container(
-        color: _theme.primaryColorLight.withAlpha(5),
-        height: 32,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            InkWell(
-                onTap: () {
-                  _showFilterWindow(context);
-                },
-                child: Row(children: <Widget>[
-                  Icon(Icons.filter_list),
-                  Padding(
-                    padding: EdgeInsets.only(left: 5),
-                    child: Text('Filters', style: _theme.textTheme.bodyText1),
-                  )
-                ])),
-            InkWell(
-                onTap: () {
-                  _showSortOptions(context);
-                },
-                child: Row(children: <Widget>[
-                  Icon(Icons.import_export),
-                  Container(
-                    padding: EdgeInsets.only(left: 5),
-                    child: Text(sortRules?.getSortTitle() ?? '',
-                        style: _theme.textTheme.bodyText1),
-                  )
-                ])),
-            IconButton(
-              padding: EdgeInsets.only(top: 0),
-              onPressed: onChangeViewClicked,
-              icon: Icon(
-                isListView ? Icons.view_list : Icons.view_module,
+    return Container(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
+        child: Container(
+          color: _theme.primaryColorLight.withAlpha(5),
+          height: 32,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              InkWell(
+                  onTap: () {
+                    _showFilterWindow(context);
+                  },
+                  child: Row(children: <Widget>[
+                    Icon(Icons.filter_list),
+                    Padding(
+                      padding: EdgeInsets.only(left: 5),
+                      child: Text('Filters', style: _theme.textTheme.bodyText1),
+                    )
+                  ])),
+              InkWell(
+                  onTap: () {
+                    _showSortOptions(context);
+                  },
+                  child: Row(children: <Widget>[
+                    Icon(Icons.import_export),
+                    Container(
+                      padding: EdgeInsets.only(left: 5),
+                      child: Text(sortRules?.getSortTitle() ?? '',
+                          style: _theme.textTheme.bodyText1),
+                    )
+                  ])),
+              IconButton(
+                padding: EdgeInsets.only(top: 0),
+                onPressed: onChangeViewClicked,
+                icon: Icon(
+                  isListView ? Icons.view_list : Icons.view_module,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
