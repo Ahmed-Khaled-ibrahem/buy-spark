@@ -19,10 +19,10 @@ class OpenFlutterActionCard extends StatelessWidget {
             padding: EdgeInsets.all(AppSizes.sidePadding),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(AppSizes.imageRadius)),
-                color: AppColors.white,
+                color: AppColors.red,
                 boxShadow: [
                   BoxShadow(
-                      color: AppColors.lightGray.withOpacity(0.3),
+                      color: AppColors.lightGray.withOpacity(0.8),
                       blurRadius: AppSizes.imageRadius,
                       offset: Offset(0.0, AppSizes.imageRadius))
                 ]),
