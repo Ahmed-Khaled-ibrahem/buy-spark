@@ -25,6 +25,10 @@ class OpenFlutterActionCard extends StatelessWidget {
                       color: AppColors.lightGray.withOpacity(0.8),
                       blurRadius: AppSizes.imageRadius,
                       offset: Offset(0.0, AppSizes.imageRadius))
+                  ,BoxShadow(
+                      color: AppColors.lightGray.withOpacity(0.8),
+                      blurRadius: AppSizes.imageRadius,
+                      offset: Offset(0.0, AppSizes.imageRadius))
                 ]),
             child: Column(
               children: <Widget>[
