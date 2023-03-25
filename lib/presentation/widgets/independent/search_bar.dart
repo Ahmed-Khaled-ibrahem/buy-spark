@@ -29,7 +29,7 @@ class _OpenFlutterSearchBarState extends State<OpenFlutterSearchBar> {
           children: <Widget>[
             Padding(
               padding: EdgeInsets.all(AppSizes.linePadding * 2),
-              child: Icon(Icons.search, color: _theme.primaryColorLight),
+              child: Icon(Icons.search_rounded, color: _theme.primaryColorLight),
             ),
             Container(
                 height: 50,
