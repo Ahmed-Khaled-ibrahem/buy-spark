@@ -29,7 +29,7 @@ class _OpenFlutterSearchBarState extends State<OpenFlutterSearchBar> {
           children: <Widget>[
             Padding(
               padding: EdgeInsets.all(AppSizes.linePadding * 2),
-              child: Icon(Icons.search_rounded, color: _theme.primaryColorLight),
+              child: Icon(Icons.search_rounded, color: _theme.canvasColor),
             ),
             Container(
                 height: 50,
@@ -57,7 +57,7 @@ class _OpenFlutterSearchBarState extends State<OpenFlutterSearchBar> {
 
   @override
   void dispose() {
-    _searchKeyController?.dispose();
+    _searchKeyController.dispose();
     super.dispose();
   }
 }
