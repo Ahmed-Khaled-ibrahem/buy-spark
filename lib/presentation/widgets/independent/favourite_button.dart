@@ -26,7 +26,7 @@ class OpenFlutterFavouriteButton extends StatelessWidget {
         height: size ?? 50,
         width: size ?? 50,
         child: favourite!
-            ? Icon(Icons.favorite,
+            ? Icon(Icons.favorite_outlined,
                 size: iconSize ?? 20, color: _theme.accentColor)
             : Icon(Icons.favorite_border,
                 size: iconSize ?? 20, color: _theme.primaryColorLight),
